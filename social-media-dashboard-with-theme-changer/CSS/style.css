@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+:root {
+    /* increase or decrease text */
+    --primary-color-1: hsl(163, 72%, 41%);
+   --primary-color-2: hsl(356, 69%, 56%);
+
+   /* Top of Card */
+    --facebook: hsl(208, 92%, 53%);
+    --twitter: hsl(203, 89%, 53%);
+    --instagram: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+    --youtube: hsl(348, 97%, 39%);
+
+    /* Card Hover */
+    --card-bg-hover: hsl(227, 20%, 30%);
+
+    /* Toggle */
+    --dark-toggle: linear-gradient(to right,hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+    --light-toggle: hsl(230, 22%, 74%);
+
+    /* Dark Background */
+    --full-bg: hsl(230, 17%, 14%);
+    --top-bg: hsla(231, 23%, 17%, 0.8);
+    --card-bg: hsl(228, 28%, 20%);
+
+    /* Dark Background Text */
+    --dark-text: hsl(228, 34%, 66%);
+    --light-text: hsl(0, 0%, 100%);
+
+    /* Light Background */
+    --full-bg-light: hsl(0, 0%, 100%);
+    --top-bg-light: hsl(225, 100%, 98%);
+    --card-bg-light: hsl(227, 47%, 96%);
+
+    /* Light Background Text */
+    --light-dark-text: hsl(228, 12%, 44%);
+    --very-dark-text: hsl(230, 17%, 14%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: .3s;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--full-bg);
+    color: #fff;
+}
+
+header {
+    background-color: var(--top-bg);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    height: 220px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.social-content-1,
+.social-content-2 {
+    margin: 0 70px;
+    max-width: 1100px;
+    padding: 0 0 25px;
+}
+
+.social-header {
+    padding: 25px 0;
+}
+
+.social-text {
+    position: relative;
+}
+
+.social-text h2 {
+    font-size: 30px;
+    margin-bottom: 3px;
+}
+
+.social-text p {
+    color: var(--dark-text);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.toggle-container {
+    align-items: center;
+    color: var(--dark-text);
+    display: flex;
+    justify-content: flex-end;
+}
+
+.toggle-container p {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+#toggle-switch {
+    background: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+    border-radius: 200px;
+    cursor: pointer;
+    display: block;
+    height: 23px;
+    margin-left: 15px;
+    position: relative;
+    width: 48px;
+}
+
+#toggle-switch .indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 23px;
+    background: #28292c;
+    border-radius: 50%;
+    transform: scale(0.9);
+}
+
+.social-cards {
+    margin: 10px 0 20px;
+}
+
+.card-item {
+    background-color: var(--card-bg);
+    border-radius: 7px;
+    height: 200px;
+    overflow: hidden;
+    padding: 10px;
+    position: relative;
+}
+
+.card-item::before {
+    content: "";
+    height: 4px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.facebook::before {
+    background: var(--facebook);
+}
+
+.twitter::before {
+    background: var(--twitter);
+}
+
+.instagram::before {
+    background: var(--instagram);
+}
+
+.youtube::before {
+    background: var(--youtube);
+}
+
+.card-icon {
+    margin-top: 15px;
+}
+
+.card-icon img {
+    margin-right: 5px;
+}
+
+.card-icon p {
+    color: var(--dark-text);
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.followers-text {
+    margin: 5px 0;
+    text-align: center;
+}
+
+.followers-text h3 {
+    font-size: 50px;
+}
+
+.followers-text p {
+    color: var(--dark-text);
+    font-size: 11px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.followers-count {
+    color: var(--primary-color-1);
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.followers-count img {
+    margin-right: 5px;
+}
+
+.youtube .followers-count p {
+    color: var(--primary-color-2);
+}
+
+.social-content-2 {
+    margin-bottom: 70px;
+}
+
+.social-content-2  > p {
+    font-size: 23px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.overview-card {
+    background-color: var(--card-bg);
+    border-radius: 7px;
+    height: 100px;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.flex-row{
+    justify-content: space-between;
+    margin: 10px 10px 15px;
+}
+
+.flex-row p {
+    color: var(--dark-text);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.flex-row h2 {
+    font-size: 25px;
+}
+
+.flex-row-item {
+    margin-top: 10px;
+}
+
+.flex-row-item img {
+    margin-right: 5px;
+}
+
+.flex-row-item p {
+    color:  var(--primary-color-1);
+}
+.overview-card:nth-of-type(2) .flex-row-item p,
+.overview-card:nth-of-type(7) .flex-row-item p,
+.overview-card:nth-of-type(8) .flex-row-item p {
+    color: var(--primary-color-2);
+}
+
+@media(max-width: 960px ) {
+    .social-content-1,
+    .social-content-2 {
+        margin: 0 30px ;
+    }
+
+    .grid-1 {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .grid-2 {
+        gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .social-text h2{
+        font-size: 25px;
+    }
+}
+
+@media(max-width: 530px) {
+    header {
+        height: 250px;
+    }
+
+    .social-content-1,
+    .social-content-2 {
+        margin: 0 30px;
+    }
+
+    .social-text::after {
+        background-color: var(--card-bg-hover);
+        border: none;
+        content: "";
+        height: 1px;
+        position: absolute;
+        top: 70px;
+        width: 100%;
+    }
+
+    .grid-1 {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        height: 140px;
+        margin-bottom: 40px;
+    }
+
+    .toggle-container {
+        /* border: 1px solid; */
+        height: 40px;
+        align-items: flex-end;
+        justify-content: space-between;
+        /* margin-top: 30px; */
+    }
+}
+
+@media(max-width: 480px) {
+    .social-content-1, 
+    .social-content-2 {
+        margin: 0 20px;
+    }
+
+    .grid-1,
+    .grid-2 {
+        grid-template-columns: 1fr;
+    }
+
+    .social-text::after {
+        background-color: var(--card-bg-hover);
+        border: none;
+        content: "";
+        height: 1px;
+        position: absolute;
+        top: 70px;
+        width: 100%;
+    }
+
+    .social-text h2 {
+        font-size: 20px;
+    }
+}
+

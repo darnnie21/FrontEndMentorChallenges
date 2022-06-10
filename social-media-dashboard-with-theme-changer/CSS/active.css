@@ -1,0 +1,46 @@
+/* Light Theme when active */
+body.active {
+    background: var(--full-bg-light);
+}
+
+header.active {
+    background: var(--top-bg-light);
+}
+
+.social-text.active h2{
+    color: var(--very-dark-text);
+}
+
+.social-cards .card-item.active,
+.overview.active .overview-card{
+    background: var(--card-bg-light);
+}
+
+.social-content-text.active {
+    color: var(--very-dark-text);
+}
+
+.overview.active h2 {
+    color: var(--very-dark-text);
+}
+
+.social-cards.active h3{
+    color: var(--very-dark-text);
+}
+
+.social-cards.active .card-item {
+    background: var(--card-bg-light);
+}
+
+#toggle-switch.active {
+    background: var(--light-toggle);
+}
+
+#toggle-switch.active .indicator{
+    left: 24px;
+    background: #fff;
+}
+
+#toggle-switch.active:hover {
+    background: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+}

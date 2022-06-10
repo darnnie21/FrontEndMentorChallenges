@@ -1,0 +1,30 @@
+/* Utilities */
+.card-item:hover,
+.overview-card:hover {
+    background-color: var(--card-bg-hover);
+    cursor: pointer;
+}
+
+.grid-1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.grid-2,
+.overview{
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.card-grid {
+    align-items: center;
+    display: grid;
+    justify-content: center;
+}
+
+.flex {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
