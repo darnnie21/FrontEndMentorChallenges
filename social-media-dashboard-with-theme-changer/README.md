@@ -9,7 +9,7 @@ This is a solution to the [Social media dashboard with theme switcher challenge 
     * [Screenshot](#screenshot)
     * [Links](#links)
 * [My process](#my-process)
-    * [Built with](built-with)
+    * [Built with](#built-with)
     * [What I learned](#what-i-learned)
     * [Useful resources](#useful-resources)
 * [Author](#author)
@@ -42,6 +42,7 @@ Users should be able to:
 ---
 
 ### Built with
+
 * Semantic HTML5 markup
 * CSS custom properties
 * CSS Flexbox
